@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping package="com.jspiders.hibernate.entity">
+ 	<class name="Employee" table="employee">
+ 	   <id name="empno" column="empno" type="integer">
+ 	   	<generator class="native"></generator>
+ 	   </id>
+ 		<property name="ename" column="ename" type="string"/>
+ 		<property name="deptno" column="deptno" type="integer"/>
+ 		<property name="companyName" column="companyName" type="string"/>
+ 	</class>
+ </hibernate-mapping>
